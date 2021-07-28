@@ -1,0 +1,59 @@
+/* colors */
+/* Bright orange: hsl(31, 77%, 52%)
+Dark cyan: hsl(184, 100%, 22%)
+Very dark cyan: hsl(179, 100%, 13%)
+Transparent white (paragraphs): hsla(0, 0%, 100%, 0.75)
+Very light gray (background, headings, buttons): hsl(0, 0%, 95%) */
+/* - Family: [Lexend Deca](https://fonts.google.com/specimen/Lexend+Deca)
+- Weights: 400
+
+- Family: [Big Shoulders Display](https://fonts.google.com/specimen/Big+Shoulders+Display)
+- Weights: 700 */
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+
+
+/* start */
+
+/* small screen devices */
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-size: 15px;
+ font-family: 'Big Shoulders Display', cursive;
+}
+.boxes{
+ display: flex;
+ flex-direction:column;
+ margin: 20px 20px;
+ color: hsla(0, 0%, 100%, 0.75);
+}
+.boxes div{
+height: 32vh;
+width: 90vw;
+padding: 30px;
+}
+/* sedans */
+.sedans-box{
+ background-color:hsl(31, 77%, 52%) ;
+}
+.sedans{
+ 
+}
+/* end sedans */
+
+/* suv */
+.suvs-box{
+ background-color:hsl(184, 100%, 22%) ;
+}
+/* suv end */
+
+/* luxury */
+.luxury-box{
+ background-color: hsl(179, 100%, 13%);
+}
+/* luxury end */
+.btn{
+ width: 50px;
+}
