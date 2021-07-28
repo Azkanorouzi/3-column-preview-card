@@ -27,19 +27,35 @@ Very light gray (background, headings, buttons): hsl(0, 0%, 95%) */
  display: flex;
  flex-direction:column;
  margin: 20px 20px;
- color: hsla(0, 0%, 100%, 0.75);
+ color: hsl(0, 0%, 95%);
 }
 .boxes div{
 height: 32vh;
-width: 90vw;
-padding: 30px;
+width: 88vw;
+padding: 20px;
+}
+.boxes div h1{
+ font-size: 30px;
+}
+.boxes div p{
+ line-height: 20px;
+ color: hsla(0, 0%, 100%, 0.75);
+}
+.btn{
+ background-color: white;
+ border: none;
+ width: 100px;
+ border-radius: 100px;
+ padding: 5px;
+ margin-top: 10px;
+ cursor: pointer;
 }
 /* sedans */
 .sedans-box{
  background-color:hsl(31, 77%, 52%) ;
 }
-.sedans{
- 
+.sedans-box .btn{
+ color:hsl(31, 77%, 52%) ;
 }
 /* end sedans */
 
@@ -47,13 +63,34 @@ padding: 30px;
 .suvs-box{
  background-color:hsl(184, 100%, 22%) ;
 }
+.suvs-box .btn{
+ color:hsl(184, 100%, 22%) ;
+}
 /* suv end */
 
 /* luxury */
 .luxury-box{
  background-color: hsl(179, 100%, 13%);
 }
+.luxury-box .btn{
+ color:hsl(179, 100%, 13%) ;
+}
 /* luxury end */
-.btn{
- width: 50px;
+
+/* media query */
+
+/* small height device */
+@media  screen and (max-height:660px) {
+.boxes div{
+ padding: 15px;
+}
+ .boxes div h1{
+  font-size: 20px;
+ }
+ .boxes div p{
+  font-size: 12px;
+ }
+ .btn{
+  padding: 1px;
+ }
 }
