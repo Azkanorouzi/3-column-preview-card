@@ -36,10 +36,12 @@ padding: 20px;
 }
 .boxes div h1{
  font-size: 30px;
+
 }
 .boxes div p{
  line-height: 20px;
  color: hsla(0, 0%, 100%, 0.75);
+ font-family: 'Lexend Deca', sans-serif;
 }
 .btn{
  background-color: white;
@@ -49,7 +51,9 @@ padding: 20px;
  padding: 5px;
  margin-top: 10px;
  cursor: pointer;
+ transition: .5s;
 }
+
 /* sedans */
 .sedans-box{
  background-color:hsl(31, 77%, 52%) ;
@@ -75,6 +79,11 @@ padding: 20px;
 .luxury-box .btn{
  color:hsl(179, 100%, 13%) ;
 }
+.btn:hover{
+background-color: transparent;
+border: 1px solid  white;
+color: white;
+}
 /* luxury end */
 
 /* media query */
@@ -88,9 +97,69 @@ padding: 20px;
   font-size: 20px;
  }
  .boxes div p{
-  font-size: 12px;
+  font-size:9px;
  }
  .btn{
   padding: 1px;
  }
+}
+@media  screen and (max-height:428px) {
+.boxes div button{
+position: relative;
+left: 320px;
+bottom: 70px;
+}
+.boxes div{
+height: 32vh;
+}
+
+}
+/* tablet */
+@media  screen and (min-height:1000px) {
+.boxes div{
+ padding: 80px;
+}
+ .boxes div h1{
+  font-size: 30px;
+ }
+ .boxes div p{
+  font-size: 12px;
+  line-height: 30px;
+ }
+ .btn{
+  padding: 5px;
+ }
+}
+/* desktop */
+@media  screen and (min-width:1025px) {
+.boxes-container{
+ display: flex;
+height: 100vh;
+width: 100vw;
+align-items: center;
+justify-content: center;
+}
+.boxes{
+ flex-direction: row;
+}
+.boxes div{
+ width: 20vw;
+ height: 60vh;
+ padding: 38px;
+}
+.boxes div h1{
+ font-size: 40px;
+}
+.boxes div p{
+ font-size: 15px;
+ line-height: 24px;
+ margin-top: 30px;
+}
+.boxes div .btn{
+padding: 12px;
+width: 140px;
+position: absolute;
+top: 65vh;
+ font-family: 'Lexend Deca', sans-serif;
+}
 }
